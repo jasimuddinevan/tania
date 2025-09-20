@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Beloved Tania ❤️</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Floating Hearts Animation Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <!-- Floating Petals Animation -->
+    <div class="petals-container" id="petalsContainer"></div>
+    
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-content">
+                <h1 class="main-title">
+                    <span class="letter-animation">F</span>
+                    <span class="letter-animation">o</span>
+                    <span class="letter-animation">r</span>
+                    <span class="letter-animation">&nbsp;</span>
+                    <span class="letter-animation">M</span>
+                    <span class="letter-animation">y</span>
+                    <span class="letter-animation">&nbsp;</span>
+                    <span class="letter-animation">B</span>
+                    <span class="letter-animation">e</span>
+                    <span class="letter-animation">l</span>
+                    <span class="letter-animation">o</span>
+                    <span class="letter-animation">v</span>
+                    <span class="letter-animation">e</span>
+                    <span class="letter-animation">d</span>
+                    <span class="letter-animation">&nbsp;</span>
+                    <span class="letter-animation highlight">T</span>
+                    <span class="letter-animation highlight">a</span>
+                    <span class="letter-animation highlight">n</span>
+                    <span class="letter-animation highlight">i</span>
+                    <span class="letter-animation highlight">a</span>
+                </h1>
+                <p class="subtitle">You are the melody to my heart's song ❤️</p>
+            </div>
+        </header>
+        
+        <!-- Photo Section -->
+        <section class="photo-section">
+            <div class="photo-container">
+                <div class="photo-frame">
+                    <img src="images/tania-photo.jpg" alt="Beautiful Tania" class="main-photo" id="mainPhoto">
+                    <div class="photo-overlay">
+                        <div class="sparkle sparkle-1"></div>
+                        <div class="sparkle sparkle-2"></div>
+                        <div class="sparkle sparkle-3"></div>
+                    </div>
+                </div>
+                <p class="photo-caption">My beautiful angel ✨</p>
+            </div>
+        </section>
+        
+        <!-- Interactive Love Messages -->
+        <section class="love-messages">
+            <h2 class="section-title">Messages From My Heart</h2>
+            <div class="messages-container">
+                <div class="message-card" data-message="0">
+                    <div class="message-icon">💕</div>
+                    <h3>Every Day</h3>
+                    <p>Every day with you feels like a beautiful dream come true</p>
+                </div>
+                <div class="message-card" data-message="1">
+                    <div class="message-icon">🌹</div>
+                    <h3>Your Beauty</h3>
+                    <p>Your beauty shines brighter than all the flowers in the garden</p>
+                </div>
+                <div class="message-card" data-message="2">
+                    <div class="message-icon">⭐</div>
+                    <h3>My Star</h3>
+                    <p>You are my guiding star in this beautiful journey of love</p>
+                </div>
+                <div class="message-card" data-message="3">
+                    <div class="message-icon">💖</div>
+                    <h3>Forever</h3>
+                    <p>My love for you grows stronger with every passing moment</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Interactive Heart Button -->
+        <section class="interactive-section">
+            <div class="heart-button-container">
+                <button class="heart-button" id="heartButton">
+                    <i class="fas fa-heart"></i>
+                    <span>Click to send your love</span>
+                </button>
+                <div class="love-counter">
+                    <span>Love sent: </span>
+                    <span class="counter" id="loveCounter">0</span>
+                    <span> times ❤️</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Love Quotes Carousel -->
+        <section class="quotes-section">
+            <h2 class="section-title">Words of Love</h2>
+            <div class="quotes-carousel">
+                <div class="quote-container">
+                    <div class="quote active" data-quote="0">
+                        <p>"In your smile, I see something more beautiful than the stars"</p>
+                        <span class="quote-author">- From your loving heart</span>
+                    </div>
+                    <div class="quote" data-quote="1">
+                        <p>"You are my today and all of my tomorrows"</p>
+                        <span class="quote-author">- Forever yours</span>
+                    </div>
+                    <div class="quote" data-quote="2">
+                        <p>"With you, I am home"</p>
+                        <span class="quote-author">- Always and forever</span>
+                    </div>
+                    <div class="quote" data-quote="3">
+                        <p>"You are the poetry my heart never learned to write"</p>
+                        <span class="quote-author">- Written in love</span>
+                    </div>
+                </div>
+                <div class="quote-navigation">
+                    <button class="nav-btn prev-btn" id="prevQuote">❮</button>
+                    <div class="quote-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                    </div>
+                    <button class="nav-btn next-btn" id="nextQuote">❯</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Music Player Section -->
+        <section class="music-section">
+            <h2 class="section-title">Our Love Song</h2>
+            <div class="music-player">
+                <div class="music-controls">
+                    <button class="play-btn" id="playBtn">
+                        <i class="fas fa-play" id="playIcon"></i>
+                    </button>
+                    <div class="music-info">
+                        <p class="song-title">Love Theme</p>
+                        <p class="song-artist">Playing in our hearts</p>
+                    </div>
+                </div>
+                <div class="music-visualizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with 💖 for the most beautiful woman in the world</p>
+        <div class="footer-hearts">
+            <span>💕</span>
+            <span>💖</span>
+            <span>💕</span>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/animations.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+</html>
